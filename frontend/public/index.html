@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TravelTech MultiCloud</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>TravelTech MultiCloud</h1>
+
+    <div class="search-box">
+      <input type="text" id="countryInput" placeholder="Escribe un país..." />
+      <button id="searchBtn">Buscar</button>
+    </div>
+
+    <section id="countryResult" class="card"></section>
+
+    <section class="actions card">
+      <h2>Acciones</h2>
+      <button id="saveFavoriteBtn">Guardar en favoritos</button>
+      <button id="markVisitedBtn">Marcar como visitado</button>
+
+      <div class="comment-box">
+        <input type="text" id="commentInput" placeholder="Escribe un comentario..." />
+        <button id="saveCommentBtn">Guardar comentario</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Favoritos</h2>
+      <ul id="favoritesList"></ul>
+    </section>
+
+    <section class="card">
+      <h2>Comentarios</h2>
+      <ul id="commentsList"></ul>
+    </section>
+
+    <section class="card">
+      <h2>Visitados</h2>
+      <ul id="visitedList"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
