@@ -1,6 +1,6 @@
-const FAVORITES_URL = "http://localhost:3001";
-const COMMENTS_URL = "http://localhost:3002";
-const VISITED_URL = "http://localhost:3003";
+const FAVORITES_URL = "https://favorite-services.onrender.com/";
+const COMMENTS_URL = "https://traveltech-multicloud.onrender.com";
+const VISITED_URL = "https://visited-service.onrender.com";
 
 let currentCountry = null;
 
