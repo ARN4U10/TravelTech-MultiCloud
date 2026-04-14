@@ -1,5 +1,5 @@
 {
-  "name": "favorites-service",
+  "name": "favorite-service",
   "version": "1.0.0",
   "description": "Favorites microservice",
   "main": "server.js",
