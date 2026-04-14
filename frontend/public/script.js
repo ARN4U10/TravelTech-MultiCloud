@@ -1,4 +1,4 @@
-const FAVORITES_URL = "https://favorite-services.onrender.com/";
+const FAVORITES_URL = "https://favorite-services.onrender.com";
 const COMMENTS_URL = "https://traveltech-multicloud.onrender.com";
 const VISITED_URL = "https://visited-service.onrender.com";
 
