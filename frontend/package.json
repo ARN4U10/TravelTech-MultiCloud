@@ -4,7 +4,10 @@
   "description": "Frontend TravelTech MultiCloud",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "jest",
+    "lint": "eslint .",
+    "build": "echo \"Build completat correctament\""
   },
   "dependencies": {
     "express": "^4.19.2"

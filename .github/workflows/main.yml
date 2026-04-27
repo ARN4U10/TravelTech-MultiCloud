@@ -1,0 +1,42 @@
+name: CI - Build, Lint i Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Descarrega el codi
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Configura Node.js
+      - name: Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # Instal·lar dependències
+      - name: Instal·lar dependències
+        run: npm ci
+        working-directory: ./frontend
+
+      # Build
+      - name: Build
+        run: npm run build
+        working-directory: ./frontend
+
+      # Lint
+      - name: Lint
+        run: npm run lint
+        working-directory: ./frontend
+
+      # Tests
+      - name: Tests
+        run: npm test
+        working-directory: ./frontend
